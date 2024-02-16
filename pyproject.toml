@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "reinforcementexp"
+name = "LunarLander-DQN"
 version = "0.1.0"
-description = ""
+description = "LunarLander-DQN is a Python project that implements a DQN with extension algorithm for training an agent to land a lunar lander spacecraft."
 authors = ["swappy <59965507+rycerzes@users.noreply.github.com>"]
 readme = "README.md"
 

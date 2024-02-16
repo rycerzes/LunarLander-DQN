@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "reinforcementexp"
+version = "0.1.0"
+description = ""
+authors = ["swappy <59965507+rycerzes@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+gymnasium = {extras = ["box2d"], version = "^0.29.1"}
+stable-baselines3 = "2.2.1"
+numpy = "^1.26.4"
+matplotlib = "^3.8.2"
+torch = { version = "2.2.0+cu121", source = "torch-cu121" }
+ipykernel = "^6.29.2"
+pygame = "^2.5.2"
+swig = "^4.2.0"
+
+[[tool.poetry.source]]
+name = "torch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "supplemental"
+
+[[tool.poetry.source]]
+name = "torch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

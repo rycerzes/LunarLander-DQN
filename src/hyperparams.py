@@ -1,5 +1,5 @@
 from stable_baselines3 import DQN
-from DDQN import DoubleDQN
+from agents.DDQN import DoubleDQN
 
 def create_dqn(env):
     """

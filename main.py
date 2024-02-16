@@ -1,11 +1,11 @@
-from cuda_test import cuda_availability as cuda_chk
-from hyperparams import create_dqn,create_double_q
-from environment import create_env
+from src.cuda_test import cuda_availability as cuda_chk
+from src.hyperparams import create_dqn,create_double_q
+from src.environment import create_env
 from stable_baselines3.common.evaluation import evaluate_policy
-from actions import simple
-from q_val import get_q_values
-from runner import run_episode
-from monitor import MonitorQValueCallback
+from src.actions import simple
+from src.q_val import get_q_values
+from src.runner import run_episode
+from src.monitor import MonitorQValueCallback
 import numpy as np
 import matplotlib.pyplot as plt
 import os
